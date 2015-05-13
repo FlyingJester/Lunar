@@ -1,0 +1,12 @@
+import os
+import sys
+
+Import("environment")
+
+source = [
+  "csv.c"
+]
+
+libfjcsv = environment.StaticLibrary("fjcsv", source)
+
+Return("libfjcsv")
