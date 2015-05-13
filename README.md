@@ -18,8 +18,8 @@ Lunar uses callbacks, which are supplied by the calling application.
 Lunar is specifically designed to make lexers for regular languages and syntaxes. It recognizes two constructs, keywords and spans.
 
 A keyword is simply a string that is matched. A span is a length of text that starts with a certain string and ends with a certain
-string. An example of a keyword would be "const" or "int" in C/C++. A span would be block comments ("/*" to "*/") or one-line
-comments ("//" to a newline character) in C/C++.
+string. An example of a keyword would be "const" or "int" in C/C++. A span would be block comments (`/*` to `*/`) or one-line
+comments (`//` to a newline character) in C/C++.
 
 When Lunar finds a match, it performs the callback you supplied, providing the location and length of the match.
 
